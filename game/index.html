@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dapur Kilat — Game Masak</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: #241a12;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+  }
+  #wrap { text-align: center; }
+  canvas {
+    width: min(1280px, 100vw);
+    height: auto;
+    max-height: calc(100vh - 28px);
+    aspect-ratio: 1280 / 720;
+    background: #c89b6a;
+    border-radius: 8px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+    cursor: pointer;
+  }
+  #help {
+    color: #b9a98f; font-size: 13px; margin-top: 8px;
+  }
+  #help b { color: #ffd34d; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="help">Gerak: <b>WASD / Panah</b> &nbsp;•&nbsp; Interaksi: <b>E / Spasi / Klik</b> &nbsp;•&nbsp; Tahan <b>E</b> untuk memotong &nbsp;•&nbsp; <b>P</b> jeda &nbsp;•&nbsp; <b>M</b> suara &nbsp;•&nbsp; <b>R</b> ulang</div>
+</div>
+<script src="src/config.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/input.js"></script>
+<script src="src/world.js"></script>
+<script src="src/game.js"></script>
+<script src="src/render.js"></script>
+<script src="src/demo.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
